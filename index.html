@@ -98,7 +98,19 @@ button{
   margin:0 6px;
   transition:transform .3s,background .3s;
 }
+.tech-stack{
+  margin-top:10px;
+}
 
+.tech{
+  display:inline-block;
+  margin:4px 6px 0 0;
+  padding:5px 9px;
+  font-size:12px;
+  background:#e2e8f0;
+  border-radius:5px;
+  color:#111827;
+}
 button:hover{transform:translateY(-2px)}
 .toggle{background:#e2e8f0;color:#111827}
 
@@ -264,13 +276,31 @@ body.dark .toggle{background:#334155;color:#f8fafc}
       <div class="section" id="proyectos">
         <h2>Proyectos</h2>
         <div class="project">
-  <h3>Sistema de Gestión de Solicitudes</h3>
-  <p>Desarrollado en Java con PostgreSQL para control administrativo.</p>
+  <div class="project">
+  <h3>Sistema de Generación Masiva de Códigos QR</h3>
+
+  <p>
+    Herramienta web desarrollada para la generación automatizada de códigos QR
+    a partir de palabras clave o conjuntos de datos. El sistema permite crear
+    múltiples códigos simultáneamente y exportarlos en diferentes formatos
+    (PDF, Excel o archivos comprimidos ZIP), facilitando su distribución,
+    control e integración en procesos administrativos.
+  </p>
+
   <div class="project-buttons">
-    <a href="docs/SistemaGestion.pdf" target="_blank">Ver Documento</a>
-    <a href="docs/DocumentacionTecnica.pdf" target="_blank">Documentación</a>
+    <a href="docs/GeneracionQR.pdf" target="_blank">Ver Documentación</a>
+  </div>
+
+  <div class="tech-stack">
+    <span class="tech">HTML</span>
+    <span class="tech">Procesamiento de Datos</span>
+    <span class="tech">Automatización</span>
+    <span class="tech">Generación QR</span>
+    <span class="tech">Exportación PDF/Excel</span>
   </div>
 </div>
+
+           
         <div class="project">
           <strong>CV Web</strong>
           <p>HTML, CSS y JavaScript.</p>
