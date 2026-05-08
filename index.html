@@ -127,6 +127,26 @@ button:hover{
 .profile-pic:hover{
   transform:scale(1.05);
 } 
+   .mini-info{
+  margin-top:15px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.mini-info span{
+  background:#eff6ff;
+  padding:8px 14px;
+  border-radius:20px;
+  font-size:13px;
+  color:#1e3a8a;
+}
+
+body.dark .mini-info span{
+  background:#1e293b;
+  color:#cbd5e1;
+}
 
 .toggle{background:#e2e8f0;color:#111827}
 
@@ -293,6 +313,22 @@ body.dark .progress{
      <img src="foto.jpg" class="profile-pic" style="width:140px; height:140px; object-fit:cover; border-radius:50%;">
     <h1>Chrystian Radames Paredes Acosta</h1>
     <p>Ingeniero en Sistemas Computacionales</p>
+     <div class="mini-info">
+
+  <span>
+    <i class="fa-solid fa-code"></i>
+    Backend & Frontend
+  </span>
+
+  <span>
+    <i class="fa-solid fa-database"></i>
+    PostgreSQL
+  </span>
+
+  <span>
+    <i class="fa-solid fa-location-dot"></i>
+    Estado de México
+  </span>
   </div>
    
   <div class="actions">
