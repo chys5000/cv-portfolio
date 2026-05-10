@@ -9,11 +9,9 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 
-/* =====================
-   PALETA CORPORATIVA
-   ===================== */
+/* Paleta corporativa */
 :root{
-  --primary:#2563eb;   /* azul profesional */
+  --primary:#2563eb;   
   --bg:#f8fafc;
   --card:#ffffff;
   --text:#111827;
@@ -204,6 +202,27 @@ li:hover{transform:translateX(5px)}
   transform:translateY(-6px) scale(1.01);
   box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
+   .project-buttons{
+  margin-top:15px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.project-buttons a{
+  text-decoration:none;
+  background:#2563eb;
+  color:white;
+  padding:10px 16px;
+  border-radius:10px;
+  font-size:13px;
+  transition:.3s;
+}
+
+.project-buttons a:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(37,99,235,.25);
+}
 
 /* DARK MODE */
 body.dark{
@@ -289,7 +308,7 @@ body.dark .progress{
 
   .section{page-break-inside: avoid}
 }
-  
+  /*termino del css*/
 </style>
 
 </head>
