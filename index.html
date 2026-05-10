@@ -359,6 +359,16 @@ body.dark .progress{
 
   .section{page-break-inside: avoid}
 }
+  #clock{
+  margin-top:12px;
+  font-size:14px;
+  color:#64748b;
+  font-weight:500;
+}
+
+body.dark #clock{
+  color:#cbd5e1;
+}
   /*termino del css*/
 </style>
 
@@ -602,11 +612,38 @@ if(savedMode){
 
 function toggleDark(){
   document.body.classList.toggle('dark');
+
   localStorage.setItem(
     'theme',
     document.body.classList.contains('dark') ? 'dark' : 'light'
   );
 }
+
+/* RELOJ */
+
+function updateClock(){
+
+  const now = new Date();
+
+  const options = {
+    weekday:'long',
+    year:'numeric',
+    month:'long',
+    day:'numeric',
+    hour:'2-digit',
+    minute:'2-digit',
+    second:'2-digit'
+  };
+
+  document.getElementById("clock-text").innerHTML =
+    now.toLocaleDateString('es-MX', options);
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
 </script>
 
 </body>
