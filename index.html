@@ -6,10 +6,10 @@
 <title>CV & Portafolio | Chrystian Paredes</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{margin:0;padding:0;box-sizing:border-box}/*Quita márgenes y espacios automáticos de HTML.*/
+html{scroll-behavior:smooth} /*Hace que el scroll sea suave al dar clic en el menú*/
 
-/* Paleta corporativa */
+/* Colores globales */
 :root{
   --primary:#2563eb;   
   --bg:#f8fafc;
@@ -18,11 +18,11 @@ html{scroll-behavior:smooth}
   --muted:#4b5563;
 }
 
-/* LISTA EXPERIENCIA */
+/* Controla separación y espacio de la lista de experiencia */
 .experience-list{margin-top:12px;padding-left:18px}
 .experience-list li{margin-bottom:10px;line-height:1.6}
 
-/* BASE */
+/* Controla colores fondos etc*/
 body{
   background:var(--bg);
   font-family:'Segoe UI',Tahoma,sans-serif;
@@ -157,6 +157,57 @@ body.dark .mini-info span{
 
 @media(max-width:900px){
   .grid{grid-template-columns:1fr}
+}
+  /*Sirve para que se adapte a movil*/
+@media(max-width:768px){
+
+  .nav-container{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+  }
+
+  nav a{
+    margin:0 8px;
+    font-size:13px;
+  }
+
+  body{
+    padding-top:140px;
+  }
+
+  .cv{
+    padding:25px;
+    border-radius:0;
+  }
+
+  .header h1{
+    font-size:28px;
+  }
+
+  .profile-pic{
+    width:110px !important;
+    height:110px !important;
+  }
+
+  button{
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .mini-info{
+    gap:8px;
+  }
+
+  .mini-info span{
+    font-size:12px;
+    padding:6px 10px;
+  }
+
+  .project{
+    padding:15px;
+  }
+
 }
 
 /* SECCIONES */
