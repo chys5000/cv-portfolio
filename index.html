@@ -412,6 +412,14 @@ body.dark #clock{
     page-break-inside:avoid;
   }
 }
+  .hover-effect{ /*animacion cuando pasas por el mouse*/
+  transition:.3s ease;
+}
+
+.hover-effect:hover{
+  transform:translateY(-5px) scale(1.02);
+  box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
   /*termino del css*/
 </style>
 
@@ -468,7 +476,7 @@ body.dark #clock{
     <button onclick="window.print()">DESCARGAR PDF</button>
     <button class="toggle" onclick="toggleDark()">MODO OSCURO</button>
   </div>
-<div class="section">
+<div class="section hover-effect">
 
   <h2>
     <i class="fa-solid fa-user"></i>
