@@ -413,12 +413,12 @@ body.dark #clock{
   }
 }
   .hover-effect{
-  transition:.25s ease;
-  position:relative;
+  transition:transform .25s ease, box-shadow .25s ease;
 }
 
 .hover-effect:hover{
-  left:5px;
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,.08);
 }
   /*termino del css*/
 </style>
